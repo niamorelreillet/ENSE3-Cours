@@ -52,7 +52,7 @@
 
 \newcommand{\grad}[1]{\nabla #1}
 \renewcommand{\div}[1]{\nabla \cdot #1}
-\newcommand{\Lapl}[1]{\Delta #1}
+\newcommand{\Lapl}[1]{\nabla^2 #1}
 
 \newenvironment{remark}[1][\textit{Nota Bene}]{\begin{trivlist}
 \item[\hskip \labelsep {\bfseries \rule{1ex}{1ex} #1}]\ignorespaces}{\rule{1ex}{1ex} \end{trivlist}\ignorespacesafterend}
@@ -64,8 +64,8 @@
 \title[Rétention du corium en cuve]  %optional
 {Accidents graves des réacteurs nucléaires}
 \subtitle{Comportement et rétention du corium en cuve d'un réacteur à eau légère}
-\date[Octobre 2024]  %optional
-{Cycles nucléaires - filière ENSE3/IEN, octobre 2024}
+\date[Décembre 2025]  %optional
+{Cycles nucléaires - filière ENSE3/IEN, décembre 2025}
 \author[Romain Le Tellier]  %optionam
 {Romain Le Tellier \texttt{(\small romain.le-tellier\myat cea.fr)} \and Jules Delacroix \and Pascal Piluso}
 \institute[CEA IRESNE]  %optional
@@ -111,40 +111,6 @@
 \input{part1.tex}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{TD : évaluation du bilan thermique intégral}
-\transition[2]{TD}{évaluation du bilan thermique intégral}
-\begin{frame}[fragile]
-\frametitle{TD : évaluation du bilan thermique intégral}
-\begin{columns}[T]
-    \begin{column}{0.4\textwidth}
-      \begin{figure}[H]
-\centering \includegraphics[height=0.35\textheight]{Figures/TD_2layer.eps}
-\caption{Configuration à deux couches et notations des flux et températures}
-      \end{figure}
-    \end{column}
-    \begin{column}{0.6\textwidth}
-    \begin{itemize}
-    \item Objectif: évaluation de la \emph{répartition de la puissance et du flux de chaleur} aux interfaces d'un bain de corium
-    \item \emph{Configuration stationnaire à deux couches} :
-    \begin{itemize} 
-    \item en bas : une phase oxyde qui porte toute la puissance résiduelle entourée d'une croûte réfractaire 
-    \item en haut : de l'acier liquide en contact direct avec la paroi de la cuve en fusion
-    \end{itemize}
-    \item Hypothèses et fermetures classiquement utilisées dans les codes de calculs (et que l'on vient de présenter pour la plupart)
-    \end{itemize}
-    \end{column}
-\end{columns}
-\vskip \baselineskip
-\begin{itemize}
- \item description : \href[pdfnewwindow=true]{{./TD/TD_description}.pdf}{\color{blue}{\underline{\T{./TD/TD\_description.pdf}}}} 
- \item notebooks Jupyter (``cahiers électroniques'' en python 3 manipulables dans un navigateur web) : 
-\end{itemize}
-\begin{scriptsize}
-\vskip - 0.5\baselineskip \href[pdfnewwindow=true]{https://mybinder.org/v2/gh/niamorelreillet/ENSE3-Cours/main?urlpath=lab}{\color{blue}{\underline{\T{https://mybinder.org/v2/gh/niamorelreillet/ENSE3-Cours/main?urlpath=lab}}}}
-\end{scriptsize}
-\end{frame}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \input{part2.tex}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -162,7 +128,7 @@
 \item Ainsi, \emph{pour réacteurs de ``forte puissance'' avec IVR} (e.g. AP-1000, APR-1400, HPR-1000) : \\ \emph{R\&D (intéressante !) à poursuivre} / 
 \emph{échec de l'IVR à étudier} $\rightarrow$ corium hors de la cuve
 \end{itemize}
-\begin{exampleblock}{Au prochain cours (avec J. Delacroix)}
+\begin{exampleblock}{\textit{c.f.} cours avec J. Delacroix}
 Comportement du corium hors cuve \\ (échec de l'IVR ou stratégie \emph{``Ex-Vessel Retention''} - EVR)
 \begin{itemize}
   %\item Interaction Corium-Eau et \emph{risque d'explosion vapeur}
@@ -173,7 +139,7 @@ Comportement du corium hors cuve \\ (échec de l'IVR ou stratégie \emph{``Ex-Ve
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\closingframe
+% \closingframe
 
 \section*{Références}
 \begin{frame}[fragile,allowframebreaks]
